@@ -1,5 +1,10 @@
 html {
     font-family:'Roboto', sans-serif;
+    background-color: #FCF6F5FF;
+}
+
+body {
+    margin: 0;
 }
 
 h1, h2{
@@ -8,9 +13,14 @@ h1, h2{
 
 header{
     display:grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-around;
-    align-content: center;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-bottom: 1px solid;
+    background-color: #212121;
+    color: #FCF6F5FF;
 }
 
 .name {
@@ -19,15 +29,62 @@ header{
 
 .links {
     grid-column: 3;
+    float:right;
 }
 
 .links li{
     display:inline;
-    align-self:center;
     font-size: 1.5em;
+    padding-left: 0.5em;
 }
 
-a {
-    text-decoration: none;
-    color:black;
+a{
+    color: #FCF6F5FF;
+    text-decoration-line: none;
+}
+
+section {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size:1.25em;
+}
+
+#skills div{
+    font-size: 2em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 2em;
+    justify-content: space-between;
+    padding-bottom: 1.5em;
+}
+
+#skills i{
+    padding: 0.5em 1em;
+}
+
+footer{
+    display: grid;
+    background-color: #212121;
+    color: #FCF6F5FF;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    font-family:'Roboto Mono', monospace;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1em;
+}
+
+.footer-links{
+    grid-column: 3;
+    list-style-type: none;
+}
+
+.footer-links i{
+    font-size: 1.25em;
+}
+
+footer li{
+    padding: 0.25em;
 }
