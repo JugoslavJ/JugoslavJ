@@ -53,7 +53,7 @@ section {
     font-size: 2em;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(auto-fit, 2em);
     grid-auto-rows: 2em;
     justify-content: space-between;
     padding-bottom: 1.5em;
