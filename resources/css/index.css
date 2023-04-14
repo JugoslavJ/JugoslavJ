@@ -1,10 +1,18 @@
 html {
     font-family:'Roboto', sans-serif;
     background-color: #FCF6F5FF;
+    height: 100%;
 }
 
 body {
     margin: 0;
+    display:grid;
+    grid-template-rows: 1fr 20fr 1fr;
+    height: 100%;
+}
+
+main {
+    height:100%;
 }
 
 h1, h2{
@@ -60,6 +68,20 @@ section {
 }
 
 #skills i{
+    padding: 0.5em 1em;
+}
+
+#contact div{
+    font-size: 2em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 2em);
+    grid-auto-rows: 2em;
+    justify-content: space-between;
+    padding-bottom: 1.5em;
+}
+
+#contact i{
     padding: 0.5em 1em;
 }
 
