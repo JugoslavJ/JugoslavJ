@@ -1,0 +1,33 @@
+html {
+    font-family:'Roboto', sans-serif;
+}
+
+h1, h2{
+    font-family:'Roboto Mono', monospace;
+}
+
+header{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.name {
+    grid-column: 1;
+}
+
+.links {
+    grid-column: 3;
+}
+
+.links li{
+    display:inline;
+    align-self:center;
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
