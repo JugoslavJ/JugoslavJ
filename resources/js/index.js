@@ -6,7 +6,7 @@ async function hideAllProjectDescriptions(){
         if( !(paragraph.style.display === "none")){
             paragraph.style.visibility = "hidden";
             paragraph.style.opacity = "0";
-            await delay(200);
+            await delay(100);
             paragraph.style.display = "none";
         }
     });
@@ -17,9 +17,9 @@ async function showOnlyThisParagraph(paragraph){
         hideAllProjectDescriptions();
     } else {
         await hideAllProjectDescriptions();
-        await delay(200);
+        await delay(100);
         paragraph.style.display = "block";
-        await delay(200);
+        await delay(100);
         paragraph.style.visibility = "visible";
         paragraph.style.opacity = "1";
     }

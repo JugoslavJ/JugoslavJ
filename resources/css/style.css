@@ -50,11 +50,9 @@ header{
 
 header nav{
     grid-column: 3;
-    justify-self: end;
 }
 
 .links {
-    grid-column: 3;
     float:right;
 }
 
@@ -123,7 +121,6 @@ section p{
 .project-list button:hover{
     background-color:#bfe2ff;
     color:#00467f;
-    background-image: none;
     cursor: pointer;
 }
 
@@ -181,11 +178,18 @@ footer li{
     padding: 0.25em;
 }
 
+@media only screen and (max-aspect-ratio: 1.92) {
+    .project-list{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media only screen and (max-aspect-ratio: 1/1)  {
     header, footer, section {
         padding-left: 5%;
         padding-right: 5%;
     }
+
     html{
         font-size: 24px;
     }
