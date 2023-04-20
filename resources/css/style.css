@@ -186,4 +186,7 @@ footer li{
         padding-left: 5%;
         padding-right: 5%;
     }
+    html{
+        font-size: 24px;
+    }
 }
