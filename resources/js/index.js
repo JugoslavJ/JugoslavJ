@@ -3,10 +3,12 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
 async function hideAllProjectDescriptions(){
     let paragraphs = document.querySelectorAll("#projects p");
     paragraphs.forEach( async paragraph => {
-        paragraph.style.visibility = "hidden";
-        paragraph.style.opacity = "0";
-        await delay(200);
-        paragraph.style.display = "none";
+        if( !(paragraph.style.display === "none")){
+            paragraph.style.visibility = "hidden";
+            paragraph.style.opacity = "0";
+            await delay(200);
+            paragraph.style.display = "none";
+        }
     });
 }
 
