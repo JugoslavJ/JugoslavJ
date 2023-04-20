@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <head>
     <title>Jugoslav Jovičić</title>
-    <link rel="stylesheet" href="./resources/css/index.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <script async src="https://kit.fontawesome.com/4874cfccb5.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4874cfccb5.js" crossorigin="anonymous"></script>
+    <script src="resources/js/index.js"></script>
 </head>
-<body>
+<body onload="attachEvents()">
     <header>
         <a href="index.html"><h1 class="name">Jugoslav Jovičić</h1></a>
         <nav>
@@ -29,31 +30,53 @@
     <main>
         <section id="about-me">
             <h2><span class="section-title">About me</span></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Curabitur a purus hendrerit, vulputate ex vitae, aliquam nulla. 
-                Etiam placerat hendrerit porttitor. Donec sed cursus lectus. 
-                Sed sit amet lorem pretium nisi mattis ultricies in vitae lorem. 
-                Cras eros enim, scelerisque vel facilisis quis, interdum non ligula. 
-                Etiam dui turpis, ornare in tempus nec, scelerisque vel leo. 
-                Duis imperdiet sagittis dui, a feugiat sapien consectetur luctus. 
-                Sed eget finibus enim, ut tempus nulla. Proin sodales vitae lectus ac porta. 
-                Donec sit amet tortor non magna fringilla elementum. Morbi consequat ante et tortor vehicula,
-                 sed cursus quam fringilla. Donec tincidunt enim sit amet velit bibendum congue. 
-                 Donec quis mi ut sapien cursus molestie nec nec enim. In fringilla tincidunt nibh ac maximus. 
-                 Nullam quis dictum felis, quis viverra risus.</p>
+            <p>
+                Software Engineering student.
+                Passionate about coding and web design, currently working on becoming a full stack developer.
+                Always eager to learn new technologies and solve complex problems.
+                2 years of experience in C, C++ and Python. 
+                Technology specialist with extensive experience in Windows, Windows Server, and Computer Networking.
+                Currently working as a SW Support Specialist III at NCR, remotely configuring and maintaining NCR Aloha Point of Sale systems across thousands of customers.
+                Freelance web designer.
+            </p>
         </section>
         <section id="projects">
             <h2><span class="section-title">Projects</span></h2>
-            <p>Duis volutpat, elit sit amet rutrum pharetra, urna turpis scelerisque sem, vel posuere mi metus a massa. 
-                Fusce vestibulum vel magna eu imperdiet. Mauris tempor quam at consequat mattis. 
-                Ut rhoncus erat quis nulla blandit aliquam. Duis sit amet ultrices elit. 
-                Donec porttitor condimentum sagittis. 
-                Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ac est tortor. 
-                Nam id felis convallis, cursus purus molestie, sollicitudin risus. 
-                Donec ac tellus imperdiet, scelerisque magna vitae, vestibulum diam. 
-                Pellentesque sed sapien ut libero tristique accumsan a vel nunc. Morbi iaculis egestas elementum. 
-                Morbi elementum ante tellus, vitae lobortis metus laoreet eu. 
-                Aliquam erat volutpat. Nulla lacinia nisl ac neque egestas condimentum.</p>
+            <div class="project-list">
+                <button type="button" class="project-chess">
+                    <h3>Chess Analysis script/program</h3>
+                </button>
+                <button type="button" class="project-game">
+                    <h3>Game Automation scripts/programs</h3>
+                </button>
+                <button type="button" class="project-autoreport">
+                    <h3>Auto-report script for Aloha</h3>
+                </button>
+                <button type="button" class="project-portfolio">
+                    <h3>This page!</h3>
+                </button>
+            </div>
+            <p class="project-chess">
+                Created Python scripts to remove book moves from PGN files containing chess games.
+                Used binary Book file containing hashes of positions, with calculated best computer moves.
+                Later rewrote it in C++ as a CLI program, leading to huge performance gains.  
+                The C++ program is a PGN parser, converter, chess simulator, as well as a filtering program. 
+                <br>Program has been used at <a href="https://www.chess.com/">Chess.com</a> to catch players cheating, on the Fair Play subforum. 
+            </p>
+            <p class="project-game">
+                Started with scripts for MMORPG RuneScape, written for Simba & SRL, using Pascal. 
+                Moved to Java scripts written for injection and reflection clients. 
+                Also created pure color scripts using AutoHotKey. 
+            </p>
+            <p class="project-autoreport">
+                Created a batch script to auto generate reports every night for Aloha POS system.
+                Reports are generated using built in functions, "printed" to a PDF, then sent out via email to the configured destinations.
+                In use at all Hilton hotels in the southeast United States. 
+            </p>
+            <p class="project-portfolio">
+                Created this portfolio page using HTML5/CSS3, with simple JavaScipt code. 
+                Page has been made interactive, accessible and responsive. 
+            </p>
         </section>
         <section id="skills">
             <h2><span class="section-title">Skills</span></h2>
